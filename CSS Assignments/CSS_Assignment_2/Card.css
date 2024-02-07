@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.card-preview {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 320px;
+    margin: 100px auto;
+}
+
+.thumbnail-grid {
+    overflow: hidden;
+}
+
+.thumbnail-grid img {
+    width: 100%;
+    max-height: 250px;
+    height: auto;
+    display: block;
+}
+
+.info {
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+.options p {
+    display: inline-block;
+    margin: 0;
+}
+.ratings-duration {
+    display: flex;
+    gap: 1rem;
+}
+.ratings-duration p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.genre {
+    font-weight: bold;
+}
+
+.genre ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.genre li {
+    display: inline-block;
+    margin: 0;
+    /* border-radius: 4px; */
+}

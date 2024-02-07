@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Netflix sans', sans-serif;
+    background-color: rgb(20, 20, 23);
+    color: white;
+}
+
+/* Header And Navigation Stlyes */
+header {
+    background-color: black;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/* Left-Part of NavBar */
+.left_container {
+    display: flex;
+    width: 50%;
+    margin-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+nav h1 {
+    font-family: oswald;
+    color: #E50914;
+    font-size: 27px;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+/* Netflix sans font */
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+nav ul li {
+    font-family: 'Netflix Sans', sans-serif;
+    font-size: 14px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Right-Part of NavBar */
+.right_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    /* padding-right: 10px; */
+}
+
+/* Search-Bar */
+.search {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid white;
+    align-items: center;
+}
+label {
+    padding: 0.4rem;
+}
+#search-box {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+#search-box:focus {
+    outline: none;
+    border: none;
+}
+p {
+    font-family: 'Netflix Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+.icons {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    gap: 1rem;
+}
+.notif-icon {
+    display: flex;
+    position: relative;
+}
+.notif-count {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+}
+
+/* Dropdown container style */
+.drop-down {
+    display: flex;
+    align-items: center;
+    float: right;
+    overflow: hidden;
+}
+.drop-down img {
+    padding-left: 10px;
+}
+/* Dropdown button style */
+.drop-down-btn {
+    font-size: 16px;
+    border: none;
+    /* outline: none; */
+    color: white;
+    padding: 15px 3px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.drop-down:hover .drop-down-btn {
+    transform: rotateX(180deg);
+}
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: top;
+    top: 60px;
+    right: 20px;
+    border: 1px solid #494949;
+    border-radius: 3px;
+}
+.drop-down-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+.drop-down-content a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.drop-down:hover .drop-down-content {
+    display: block;
+    transform: scaleY(1);
+}
+
+main {
+    padding: 0 80px 20px;
+}
+.card-container {
+    display: flex;
+    gap: 1rem;
+}
+.card {
+    background-color: rgba(128, 128, 128, 0.463);
+    width: 192px;
+    height: 112px;
+    color: rgba(27, 9, 9, 0.448);
+}
+h5 {
+    margin: 25%;
+}
+  
