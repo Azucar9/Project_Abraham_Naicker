@@ -1,0 +1,11 @@
+import React from 'react';
+import { configureStore } from '@reduxjs/toolkit';
+import appSlice from './appSlice';
+
+export const store = configureStore({
+    reducer: {
+        app: appSlice,
+    },
+});
+
+export default store;
